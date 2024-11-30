@@ -1,0 +1,21 @@
+//cplabfinal solve
+
+#include <stdio.h>
+int main (){
+int n,k;
+while (scanf("%d%d",&n,&k)==2){
+
+    unsigned long long sum,own;
+    sum=n;
+    own=n;
+     while (own>=k){
+        sum += own/k;
+        own=own/k+own%k;
+     }
+     printf ("%llu\n",sum);
+}
+return 0;
+
+
+}
+
