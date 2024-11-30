@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+
+    int e;
+    cin >> e;
+
+
+
+    if(e % 2 == 1) {
+        e /= 2;
+        e--;
+        cout << e + 1 << endl << 3 << ' ';
+    } else {
+        e /= 2;
+        cout << e << endl;
+    }
+
+
+
+    for(int i = 0; i < e; i++) cout << 2 << ' ';
+    cout << endl;
+}
